@@ -1,0 +1,47 @@
+.name-input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background-color: rgba(72, 93, 120, .7);
+  backdrop-filter: blur(10px);
+}
+
+.input-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 4%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input-box:hover,
+.input-box:focus {
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.input-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 20%;
+  height: 4%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+  font-size: 20px;
+  background-color: #e0edfd;
+}
+
+.input-btn:hover {
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #ecf7fd;
+}
+

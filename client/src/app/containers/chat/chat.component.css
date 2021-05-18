@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 20px;
+  color: #b5d5fc;
+  background-image: linear-gradient(-90deg, #849fb8, #39668e);
+}
+
+.chat-box, .messages-list {
+  position: absolute;
+  border: .5px solid #3a5775;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.034),
+  0 7px 5px rgba(0, 0, 0, 0.048),
+  0 13px 10px rgba(0, 0, 0, 0.06),
+  0 22px 18px rgba(0, 0, 0, 0.072),
+  0 42px 33px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.chat-box {
+  top: 10%;
+  right: 10%;
+  height: 80%;
+  width: 20%;
+  text-align: center;
+}
+
+.chat-box__user-list {
+  max-height: 86%;
+  max-width: 80%;
+  margin: 0 auto 6px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-box__user-list::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2 {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 25px 12px;
+}
+
+.chat-box__user--active {
+  border: .3px solid white;
+  box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+  font-size: 1rem;
+}
+
+.messages-list {
+  position: absolute;
+  top: 10%;
+  right: 32%;
+  height: 64%;
+  width: 60%;
+}
+
+.message-input, .message-button {
+  position: relative;
+  height: 5%;
+  top: 64%;
+  left: 17%;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 3px;
+}
+
+.message-input {
+  width: 30%;
+  padding-left: 20px;
+  outline: none;
+  background-color: #aec6e2;
+}
+
+.message-button {
+  width: 10%;
+  color: #b5d5fc;
+  background-color: #36465c;
+}
+
+.messages-list {
+  max-height: 86%;
+  margin: 0 auto 46px;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.messages-list::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-box__messages {
+  height: 48px;
+  width: 48%;
+  margin: 8px;
+  color: #e0eaff;
+  background-color: rgba(125, 156, 172, .5);
+  border: .2px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+  filter: blur(.4px);
+}
+
+.message-box {
+  display: inline-flex;
+}
+
+.message-box > p {
+  margin-left: 10px;
+}
+
+.name {
+  color: #10151c;
+}
+
+.mine {
+  margin-left: 51%;
+}
+

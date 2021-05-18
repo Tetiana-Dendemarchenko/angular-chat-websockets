@@ -1,0 +1,24 @@
+<div class="container">
+  <app-user-name (userNameEvent)="userNameUpdate($event)" *ngIf="!userName"></app-user-name>
+  <h1>ANGULAR REALTIME CHAT WITH NODE.JS, SOCKET.IO AND WEBSOCKET</h1>
+  <div class="chat-box">
+    <h2>LIST OF USERS</h2>
+    <div class="chat-box__user-list">
+      <div class="chat-box__user--active" *ngFor="let user of userList">
+        <p>{{user | uppercase}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="messages-list">
+    <div class="chat-box__messages" *ngFor="let msg of messageList" [ngClass]="{mine: msg.mine}">
+      <div class="user-message">
+        <div class="message-box">
+          <p class="name">{{msg.userName | uppercase}}:</p><br>
+          <p class="message">{{msg.message}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <input class="message-input" type="text" [(ngModel)]="message"/>
+  <button class="message-button" (click)="sendMessage()">Send Message</button>
+</div>
